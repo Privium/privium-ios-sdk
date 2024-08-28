@@ -17,9 +17,25 @@
 		7D354CA52C77B1FC000BCEE8 /* EdgeComputing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D354CA42C77B1FC000BCEE8 /* EdgeComputing.swift */; };
 		7D354CA72C77B263000BCEE8 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D354CA62C77B263000BCEE8 /* Configuration.swift */; };
 		7D354CA92C77B276000BCEE8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D354CA82C77B276000BCEE8 /* Logger.swift */; };
-		7D354CAB2C77B29B000BCEE8 /* DataAggregatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D354CAA2C77B29B000BCEE8 /* DataAggregatorTests.swift */; };
 		7D354CB12C77BB6C000BCEE8 /* PriviumSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 7D354CB02C77BB6C000BCEE8 /* PriviumSDK.podspec */; };
 		7D354CB52C77C3A8000BCEE8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7D354CB42C77C3A8000BCEE8 /* README.md */; };
+		7D9067BB2C7FD552005EE7EA /* privium-ios-sdk in Resources */ = {isa = PBXBuildFile; fileRef = 7D9067BA2C7FD552005EE7EA /* privium-ios-sdk */; };
+		7D9067BC2C7FD552005EE7EA /* privium-ios-sdk in Resources */ = {isa = PBXBuildFile; fileRef = 7D9067BA2C7FD552005EE7EA /* privium-ios-sdk */; };
+		7D9067C02C7FD578005EE7EA /* CCPACompliance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9067BD2C7FD578005EE7EA /* CCPACompliance.swift */; };
+		7D9067C12C7FD578005EE7EA /* CCPACompliance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9067BD2C7FD578005EE7EA /* CCPACompliance.swift */; };
+		7D9067C22C7FD578005EE7EA /* GDPRCompliance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9067BE2C7FD578005EE7EA /* GDPRCompliance.swift */; };
+		7D9067C32C7FD578005EE7EA /* GDPRCompliance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9067BE2C7FD578005EE7EA /* GDPRCompliance.swift */; };
+		7D9067C52C7FD58E005EE7EA /* DataMasking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9067C42C7FD58E005EE7EA /* DataMasking.swift */; };
+		7D9067C82C7FD5B6005EE7EA /* DataThrottler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9067C72C7FD5B6005EE7EA /* DataThrottler.swift */; };
+		7D9067C92C7FD5B6005EE7EA /* DataThrottler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9067C72C7FD5B6005EE7EA /* DataThrottler.swift */; };
+		7D9067CB2C7FD5C8005EE7EA /* AutoMLIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9067CA2C7FD5C8005EE7EA /* AutoMLIntegration.swift */; };
+		7D9067CC2C7FD5C8005EE7EA /* AutoMLIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9067CA2C7FD5C8005EE7EA /* AutoMLIntegration.swift */; };
+		7D9067D02C7FD642005EE7EA /* DataAggregatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9067CD2C7FD642005EE7EA /* DataAggregatorTests.swift */; };
+		7D9067D12C7FD642005EE7EA /* DataAggregatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9067CD2C7FD642005EE7EA /* DataAggregatorTests.swift */; };
+		7D9067D42C7FD696005EE7EA /* BestPractices.md in Resources */ = {isa = PBXBuildFile; fileRef = 7D9067D22C7FD695005EE7EA /* BestPractices.md */; };
+		7D9067D52C7FD696005EE7EA /* BestPractices.md in Resources */ = {isa = PBXBuildFile; fileRef = 7D9067D22C7FD695005EE7EA /* BestPractices.md */; };
+		7D9067D72C7FD6AC005EE7EA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7D9067D62C7FD6AC005EE7EA /* LICENSE */; };
+		7D9067D82C7FD6AC005EE7EA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7D9067D62C7FD6AC005EE7EA /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +60,17 @@
 		7D354CA42C77B1FC000BCEE8 /* EdgeComputing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeComputing.swift; sourceTree = "<group>"; };
 		7D354CA62C77B263000BCEE8 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		7D354CA82C77B276000BCEE8 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		7D354CAA2C77B29B000BCEE8 /* DataAggregatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAggregatorTests.swift; sourceTree = "<group>"; };
 		7D354CB02C77BB6C000BCEE8 /* PriviumSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = PriviumSDK.podspec; sourceTree = "<group>"; };
 		7D354CB42C77C3A8000BCEE8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7D9067BA2C7FD552005EE7EA /* privium-ios-sdk */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "privium-ios-sdk"; sourceTree = "<group>"; };
+		7D9067BD2C7FD578005EE7EA /* CCPACompliance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCPACompliance.swift; sourceTree = "<group>"; };
+		7D9067BE2C7FD578005EE7EA /* GDPRCompliance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDPRCompliance.swift; sourceTree = "<group>"; };
+		7D9067C42C7FD58E005EE7EA /* DataMasking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataMasking.swift; sourceTree = "<group>"; };
+		7D9067C72C7FD5B6005EE7EA /* DataThrottler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataThrottler.swift; sourceTree = "<group>"; };
+		7D9067CA2C7FD5C8005EE7EA /* AutoMLIntegration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMLIntegration.swift; sourceTree = "<group>"; };
+		7D9067CD2C7FD642005EE7EA /* DataAggregatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAggregatorTests.swift; sourceTree = "<group>"; };
+		7D9067D22C7FD695005EE7EA /* BestPractices.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = BestPractices.md; sourceTree = "<group>"; };
+		7D9067D62C7FD6AC005EE7EA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +95,12 @@
 		7D2AC5032C4F5CB200E0B0C0 = {
 			isa = PBXGroup;
 			children = (
+				7D9067BA2C7FD552005EE7EA /* privium-ios-sdk */,
+				7D9067D32C7FD695005EE7EA /* Resources */,
 				7D2AC50F2C4F5CB200E0B0C0 /* Sources */,
-				7D2AC51B2C4F5CB200E0B0C0 /* PriviumSDKTests */,
-				7D354CAC2C77B386000BCEE8 /* Examples */,
+				7D9067CF2C7FD642005EE7EA /* Tests */,
 				7D2AC5112C4F5CB200E0B0C0 /* PriviumSDK.docc */,
+				7D9067D62C7FD6AC005EE7EA /* LICENSE */,
 				7D354CB02C77BB6C000BCEE8 /* PriviumSDK.podspec */,
 				7D354CB42C77C3A8000BCEE8 /* README.md */,
 				7D2AC50E2C4F5CB200E0B0C0 /* Products */,
@@ -93,26 +119,15 @@
 		7D2AC50F2C4F5CB200E0B0C0 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				7D9067BF2C7FD578005EE7EA /* Compliance */,
 				7D354C942C77AEAD000BCEE8 /* Core */,
 				7D354C8F2C77AE8B000BCEE8 /* Data */,
-				7D354C902C77AE91000BCEE8 /* Security */,
+				7D354C932C77AEA8000BCEE8 /* Edge */,
 				7D354C912C77AE98000BCEE8 /* Learning */,
 				7D354C922C77AE9E000BCEE8 /* Privacy */,
-				7D354C932C77AEA8000BCEE8 /* Edge */,
+				7D354C902C77AE91000BCEE8 /* Security */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		7D2AC51B2C4F5CB200E0B0C0 /* PriviumSDKTests */ = {
-			isa = PBXGroup;
-			children = (
-				7D354C952C77AED9000BCEE8 /* DataTests */,
-				7D354C962C77AEE2000BCEE8 /* SecurityTests */,
-				7D354C972C77AEEB000BCEE8 /* LearningTests */,
-				7D354C982C77AEF3000BCEE8 /* PrivacyTests */,
-				7D354C992C77AEFD000BCEE8 /* EdgeTests */,
-			);
-			path = PriviumSDKTests;
 			sourceTree = "<group>";
 		};
 		7D354C8F2C77AE8B000BCEE8 /* Data */ = {
@@ -134,6 +149,7 @@
 		7D354C912C77AE98000BCEE8 /* Learning */ = {
 			isa = PBXGroup;
 			children = (
+				7D9067CA2C7FD5C8005EE7EA /* AutoMLIntegration.swift */,
 				7D354CA02C77B1C1000BCEE8 /* FederatedLearningModel.swift */,
 			);
 			path = Learning;
@@ -142,6 +158,7 @@
 		7D354C922C77AE9E000BCEE8 /* Privacy */ = {
 			isa = PBXGroup;
 			children = (
+				7D9067C42C7FD58E005EE7EA /* DataMasking.swift */,
 				7D354CA22C77B1E2000BCEE8 /* DifferentialPrivacy.swift */,
 			);
 			path = Privacy;
@@ -158,6 +175,7 @@
 		7D354C942C77AEAD000BCEE8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				7D9067C72C7FD5B6005EE7EA /* DataThrottler.swift */,
 				7D354C9A2C77AF3B000BCEE8 /* PriviumSDK.swift */,
 				7D354CA62C77B263000BCEE8 /* Configuration.swift */,
 				7D354CA82C77B276000BCEE8 /* Logger.swift */,
@@ -165,47 +183,38 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		7D354C952C77AED9000BCEE8 /* DataTests */ = {
+		7D9067BF2C7FD578005EE7EA /* Compliance */ = {
 			isa = PBXGroup;
 			children = (
-				7D354CAA2C77B29B000BCEE8 /* DataAggregatorTests.swift */,
+				7D9067BD2C7FD578005EE7EA /* CCPACompliance.swift */,
+				7D9067BE2C7FD578005EE7EA /* GDPRCompliance.swift */,
+			);
+			path = Compliance;
+			sourceTree = "<group>";
+		};
+		7D9067CE2C7FD642005EE7EA /* DataTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D9067CD2C7FD642005EE7EA /* DataAggregatorTests.swift */,
 			);
 			path = DataTests;
 			sourceTree = "<group>";
 		};
-		7D354C962C77AEE2000BCEE8 /* SecurityTests */ = {
+		7D9067CF2C7FD642005EE7EA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				7D9067CE2C7FD642005EE7EA /* DataTests */,
 			);
-			path = SecurityTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
-		7D354C972C77AEEB000BCEE8 /* LearningTests */ = {
+		7D9067D32C7FD695005EE7EA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7D9067D22C7FD695005EE7EA /* BestPractices.md */,
 			);
-			path = LearningTests;
-			sourceTree = "<group>";
-		};
-		7D354C982C77AEF3000BCEE8 /* PrivacyTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PrivacyTests;
-			sourceTree = "<group>";
-		};
-		7D354C992C77AEFD000BCEE8 /* EdgeTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = EdgeTests;
-			sourceTree = "<group>";
-		};
-		7D354CAC2C77B386000BCEE8 /* Examples */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Examples;
+			name = Resources;
+			path = PriviumSDK.docc/Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +309,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D354CB52C77C3A8000BCEE8 /* README.md in Resources */,
+				7D9067BB2C7FD552005EE7EA /* privium-ios-sdk in Resources */,
 				7D354CB12C77BB6C000BCEE8 /* PriviumSDK.podspec in Resources */,
+				7D9067D42C7FD696005EE7EA /* BestPractices.md in Resources */,
+				7D9067D72C7FD6AC005EE7EA /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +320,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D9067D82C7FD6AC005EE7EA /* LICENSE in Resources */,
+				7D9067BC2C7FD552005EE7EA /* privium-ios-sdk in Resources */,
+				7D9067D52C7FD696005EE7EA /* BestPractices.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,12 +333,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D9067C52C7FD58E005EE7EA /* DataMasking.swift in Sources */,
 				7D354C9F2C77B1A6000BCEE8 /* Encryptor.swift in Sources */,
+				7D9067C02C7FD578005EE7EA /* CCPACompliance.swift in Sources */,
 				7D354CA12C77B1C1000BCEE8 /* FederatedLearningModel.swift in Sources */,
 				7D2AC5122C4F5CB200E0B0C0 /* PriviumSDK.docc in Sources */,
 				7D354CA32C77B1E2000BCEE8 /* DifferentialPrivacy.swift in Sources */,
+				7D9067CB2C7FD5C8005EE7EA /* AutoMLIntegration.swift in Sources */,
+				7D9067D02C7FD642005EE7EA /* DataAggregatorTests.swift in Sources */,
+				7D9067C22C7FD578005EE7EA /* GDPRCompliance.swift in Sources */,
 				7D354CA92C77B276000BCEE8 /* Logger.swift in Sources */,
 				7D354C9D2C77B17B000BCEE8 /* DataAggregator.swift in Sources */,
+				7D9067C82C7FD5B6005EE7EA /* DataThrottler.swift in Sources */,
 				7D354C9B2C77AF3B000BCEE8 /* PriviumSDK.swift in Sources */,
 				7D354CA72C77B263000BCEE8 /* Configuration.swift in Sources */,
 				7D354CA52C77B1FC000BCEE8 /* EdgeComputing.swift in Sources */,
@@ -334,7 +355,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D354CAB2C77B29B000BCEE8 /* DataAggregatorTests.swift in Sources */,
+				7D9067CC2C7FD5C8005EE7EA /* AutoMLIntegration.swift in Sources */,
+				7D9067C92C7FD5B6005EE7EA /* DataThrottler.swift in Sources */,
+				7D9067D12C7FD642005EE7EA /* DataAggregatorTests.swift in Sources */,
+				7D9067C12C7FD578005EE7EA /* CCPACompliance.swift in Sources */,
+				7D9067C32C7FD578005EE7EA /* GDPRCompliance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
