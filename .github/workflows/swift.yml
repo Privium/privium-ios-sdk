@@ -1,4 +1,4 @@
-name: Epic CI
+name: Privium CI/CD iOS Workflow
 
 on:
   push:
@@ -17,9 +17,9 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Set up Ruby
-      uses: actions/setup-ruby@v1
+      uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.0'
+        ruby-version: '3.0.0'  # Use the correct Ruby version format
 
     - name: Set up CocoaPods
       run: |
@@ -36,7 +36,7 @@ jobs:
       run: |
         xcodebuild test -workspace PriviumSDK.xcworkspace -scheme PriviumSDK -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=latest' \
         -only-testing:Tests/DataTests \
-        CODE_SIGN_IDENTITY="" CODE SIGNING_REQUIRED=NO
+        CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 
     - name: Lint code
       run: |
