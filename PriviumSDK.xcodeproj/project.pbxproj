@@ -95,6 +95,7 @@
 		7D2AC5032C4F5CB200E0B0C0 = {
 			isa = PBXGroup;
 			children = (
+				7D354CB42C77C3A8000BCEE8 /* README.md */,
 				7D9067BA2C7FD552005EE7EA /* privium-ios-sdk */,
 				7D9067D32C7FD695005EE7EA /* Resources */,
 				7D2AC50F2C4F5CB200E0B0C0 /* Sources */,
@@ -102,7 +103,6 @@
 				7D2AC5112C4F5CB200E0B0C0 /* PriviumSDK.docc */,
 				7D9067D62C7FD6AC005EE7EA /* LICENSE */,
 				7D354CB02C77BB6C000BCEE8 /* PriviumSDK.podspec */,
-				7D354CB42C77C3A8000BCEE8 /* README.md */,
 				7D2AC50E2C4F5CB200E0B0C0 /* Products */,
 			);
 			sourceTree = "<group>";
