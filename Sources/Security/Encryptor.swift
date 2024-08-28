@@ -1,4 +1,3 @@
-// Sources/Security/Encryptor.swift
 import Foundation
 import CryptoKit
 

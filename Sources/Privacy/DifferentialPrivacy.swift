@@ -1,11 +1,3 @@
-//
-//  DifferentialPrivacy.swift
-//  PriviumSDK
-//
-//  Created by Ryan Napolitano on 8/22/24.
-//
-
-// Sources/Privacy/DifferentialPrivacy.swift
 import Foundation
 
 public class DifferentialPrivacy {
@@ -24,4 +16,3 @@ public class DifferentialPrivacy {
         return dataset.map { applyNoise(to: $0) }
     }
 }
-
