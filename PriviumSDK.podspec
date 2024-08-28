@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     federated learning, and real-time edge computing into their iOS applications.
     DESC
 
-  s.homepage         = 'https://github.com/Privium/privium-ios-sdk' # Ensure this is correct or remove if not available
+  s.homepage         = 'https://github.com/Privium/privium-ios-sdk'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Ryan Napolitano' => 'ryan@privium.io' }
   s.source           = { :git => 'https://github.com/Privium/privium-ios-sdk.git', :tag => s.version.to_s }
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.swift_version    = '5.0'
 
   s.test_spec 'Tests' do |test_spec|
-    test_spec.source_files = 'Tests/**/*.{swift,h,m}' # Updated to reflect the new Tests directory
+    test_spec.source_files = 'Tests/**/*.{swift,h,m}'
     test_spec.requires_arc = true
     test_spec.frameworks = 'XCTest'
   end
