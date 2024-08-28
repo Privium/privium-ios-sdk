@@ -26,10 +26,8 @@ jobs:
         gem install cocoapods
         pod install --repo-update
 
-    - name: Set up Xcode
-      uses: maxim-lobanov/setup-xcode@v2
-      with:
-        xcode-version: '15.4'  # Updated to Xcode 15.4
+    - name: Select Xcode Version
+      run: sudo xcode-select -s /Applications/Xcode_15.4.app  # Select Xcode 15.4 if installed
 
     - name: Build the SDK
       run: xcodebuild -workspace PriviumSDK.xcworkspace -scheme PriviumSDK -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=latest' clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
@@ -38,7 +36,7 @@ jobs:
       run: |
         xcodebuild test -workspace PriviumSDK.xcworkspace -scheme PriviumSDK -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=latest' \
         -only-testing:Tests/DataTests \
-        CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+        CODE_SIGN_IDENTITY="" CODE SIGNING_REQUIRED=NO
 
     - name: Lint code
       run: |
