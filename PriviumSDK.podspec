@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/Privium/privium-ios-sdk' # Ensure this is correct or remove if not available
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Ryan Napolitano' => 'ryannapp@gmail.com.com' }
+  s.author           = { 'Ryan Napolitano' => 'ryan@privium.io' }
   s.source           = { :git => 'https://github.com/Privium/privium-ios-sdk.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '13.0'

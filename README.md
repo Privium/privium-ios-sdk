@@ -58,7 +58,7 @@ Swift Package Manager is a tool for managing the distribution of Swift code. To 
 
 You can also manually integrate PriviumSDK by following these steps:
 
-1. Download the latest release from the [PriviumSDK GitHub repository](https://github.com/Privium/PriviumSDK/releases).
+1. Download the latest release from the [Privium iOS SDK GitHub repository](https://github.com/Privium/privium-ios-sdk/releases).
 2. Drag and drop the `PriviumSDK.framework` file into your Xcode project.
 3. Ensure the framework is linked with your target in the Xcode project settings.
 
@@ -149,9 +149,9 @@ let processedData = edgeComputing.performComputation(on: [1.0, 2.0, 3.0]) { valu
 
 ## **Support and Resources**
 
-If you need any help integrating PriviumSDK, or if you have any questions, feel free to reach out to our support team at [support@privium.io](mailto:support@privium.io).
+If you need any help integrating PriviumSDK, or if you have any questions, feel free to reach out to our support team at [ryan@privium.io](mailto:ryan@privium.io).
 
-For more detailed documentation, including API references and advanced usage guides, visit our [GitHub repository](https://github.com/Privium/PriviumSDK) or [official website](https://privium.io/).
+For more detailed documentation, including API references and advanced usage guides, visit our [Privium iOS SDK GitHub repository](https://github.com/Privium/privium-ios-sdk) or [official website](https://privium.io/).
 
 ---
 
