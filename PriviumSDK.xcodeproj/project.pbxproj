@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7D2AC5122C4F5CB200E0B0C0 /* PriviumSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 7D2AC5112C4F5CB200E0B0C0 /* PriviumSDK.docc */; };
 		7D2AC5182C4F5CB200E0B0C0 /* PriviumSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2AC50D2C4F5CB200E0B0C0 /* PriviumSDK.framework */; };
-		7D2AC51E2C4F5CB200E0B0C0 /* PriviumSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D2AC5102C4F5CB200E0B0C0 /* PriviumSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D354C9B2C77AF3B000BCEE8 /* PriviumSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D354C9A2C77AF3B000BCEE8 /* PriviumSDK.swift */; };
 		7D354C9D2C77B17B000BCEE8 /* DataAggregator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D354C9C2C77B17B000BCEE8 /* DataAggregator.swift */; };
 		7D354C9F2C77B1A6000BCEE8 /* Encryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D354C9E2C77B1A6000BCEE8 /* Encryptor.swift */; };
@@ -35,7 +34,6 @@
 
 /* Begin PBXFileReference section */
 		7D2AC50D2C4F5CB200E0B0C0 /* PriviumSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PriviumSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D2AC5102C4F5CB200E0B0C0 /* PriviumSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PriviumSDK.h; sourceTree = "<group>"; };
 		7D2AC5112C4F5CB200E0B0C0 /* PriviumSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PriviumSDK.docc; sourceTree = "<group>"; };
 		7D2AC5172C4F5CB200E0B0C0 /* PriviumSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PriviumSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D354C9A2C77AF3B000BCEE8 /* PriviumSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriviumSDK.swift; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 		7D2AC50F2C4F5CB200E0B0C0 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				7D2AC5102C4F5CB200E0B0C0 /* PriviumSDK.h */,
 				7D354C942C77AEAD000BCEE8 /* Core */,
 				7D354C8F2C77AE8B000BCEE8 /* Data */,
 				7D354C902C77AE91000BCEE8 /* Security */,
@@ -218,7 +215,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D2AC51E2C4F5CB200E0B0C0 /* PriviumSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
