@@ -1,4 +1,4 @@
-name: iOS Workflow
+name: iOS Build
 
 on:
   push:
@@ -21,11 +21,12 @@ jobs:
       with:
         ruby-version: '3.0.0'
 
-    - name: Set up CocoaPods (if needed)
+    - name: Install CocoaPods (if Podfile exists)
       run: |
-        gem install cocoapods
-        pod install --repo-update
-      if: exists('Podfile')
+        if [ -f Podfile ]; then
+          gem install cocoapods
+          pod install --repo-update
+        fi
 
     - name: Build the SDK
       run: swift build --configuration release
