@@ -28,6 +28,10 @@ jobs:
           pod install --repo-update
         fi
 
+    - name: Install SwiftLint
+      run: |
+        brew install swiftlint
+
     - name: Build the SDK
       run: swift build --configuration release
 
@@ -36,7 +40,6 @@ jobs:
 
     - name: Lint code
       run: |
-        gem install swiftlint
         swiftlint
 
     - name: Build for iOS
