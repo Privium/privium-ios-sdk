@@ -1,4 +1,4 @@
-name: iOS Workflow
+name: Epic CI
 
 on:
   push:
@@ -21,17 +21,11 @@ jobs:
       with:
         ruby-version: '3.0.0'
 
-    - name: Select Xcode Version
-      run: sudo xcode-select -s /Applications/Xcode_15.4.app  # Select Xcode 15.4 if installed
-
-    - name: Build the SDK
-      run: xcodebuild -workspace PriviumSDK.xcodeproj -scheme PriviumSDK -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=latest' clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+    - name: Build the SDK Package
+      run: swift build --configuration release
 
     - name: Run unit tests
-      run: |
-        xcodebuild test -workspace PriviumSDK.xcodeproj -scheme PriviumSDK -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=latest' \
-        -only-testing:Tests/DataTests \
-        CODE_SIGN_IDENTITY="" CODE SIGNING_REQUIRED=NO
+      run: swift test --configuration release
 
     - name: Lint code
       run: |
