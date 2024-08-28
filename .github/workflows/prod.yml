@@ -1,0 +1,70 @@
+name: iOS Production Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.0.0'
+
+    - name: Install CocoaPods (if Podfile exists)
+      run: |
+        if [ -f Podfile ]; then
+          gem install cocoapods
+          pod install --repo-update
+        fi
+
+    - name: Install SwiftLint
+      run: |
+        brew install swiftlint
+
+    - name: Lint code
+      run: |
+        swiftlint
+
+    - name: Build the SDK
+      run: swift build --configuration release
+
+    - name: Run Unit Tests
+      run: swift test --configuration release
+
+    - name: Build for iOS
+      run: |
+        xcodebuild -scheme PriviumSDK \
+        -destination 'platform=iOS Simulator,name=iPhone 12,OS=latest' \
+        clean build \
+        CODE_SIGN_IDENTITY="" \
+        CODE_SIGNING_REQUIRED=NO
+
+    - name: Archive for iOS
+      run: |
+        xcodebuild archive \
+        -scheme PriviumSDK \
+        -destination 'generic/platform=iOS' \
+        -archivePath ${{ github.workspace }}/build/PriviumSDK.xcarchive
+
+    - name: Export IPA
+      run: |
+        xcodebuild -exportArchive \
+        -archivePath ${{ github.workspace }}/build/PriviumSDK.xcarchive \
+        -exportOptionsPlist ExportOptions.plist \
+        -exportPath ${{ github.workspace }}/build
+
+    - name: Deploy to Production Environment
+      run: |
+        echo "Deploying to Production environment"
+        # Add your production deployment steps here
