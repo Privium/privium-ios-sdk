@@ -7,11 +7,16 @@ public class PriviumSDK {
     private var configuration: PriviumConfiguration?
     private var throttler: DataThrottler?
     
-    private init() {}
+    private var baseURL: String
+    
+    private init() {
+        self.baseURL = ""
+    }
 
-    public func initialize(with configuration: PriviumConfiguration) {
+    public func initialize(with configuration: PriviumConfiguration, baseURL: String) {
         self.configuration = configuration
-        Logger.log("PriviumSDK initialized with configuration: \(configuration)")
+        self.baseURL = baseURL
+        Logger.log("PriviumSDK initialized with configuration: \(configuration) and baseURL: \(baseURL)")
         setupComponents()
     }
 
@@ -34,7 +39,7 @@ public class PriviumSDK {
         let encryptor = Encryptor(key: config.encryptionKey)
         if let encryptedData = encryptor.encryptData(Data("\(aggregatedData)".utf8)) {
             Logger.log("Event \(eventName) tracked with encrypted data.")
-            sendDataToServer(encryptedData)
+            sendDataToServer(eventName: eventName, data: encryptedData)
         } else {
             Logger.log("Failed to encrypt data for event: \(eventName)")
         }
@@ -47,8 +52,8 @@ public class PriviumSDK {
         Logger.log("PriviumSDK components setup complete.")
     }
 
-    private func sendDataToServer(_ data: Data) {
-        guard let url = URL(string: "https://api.yourserver.com/trackEvent") else {
+    private func sendDataToServer(eventName: String, data: Data) {
+        guard let url = URL(string: "\(baseURL)/api/data/collect") else {
             Logger.log("Invalid URL for sending data.")
             return
         }
@@ -56,6 +61,7 @@ public class PriviumSDK {
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        // Include proper authorization if necessary
         request.httpBody = data
         
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
