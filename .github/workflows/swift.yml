@@ -1,4 +1,4 @@
-name: iOS Build
+name: iOS WIP Build
 
 on:
   push:
@@ -32,15 +32,15 @@ jobs:
       run: |
         brew install swiftlint
 
+    - name: Lint code
+      run: |
+        swiftlint
+
     - name: Build the SDK
       run: swift build --configuration release
 
     - name: Run Unit Tests
       run: swift test --configuration release
-
-    - name: Lint code
-      run: |
-        swiftlint
 
     - name: Build for iOS
       run: |
@@ -49,3 +49,22 @@ jobs:
         clean build \
         CODE_SIGN_IDENTITY="" \
         CODE_SIGNING_REQUIRED=NO
+
+    - name: Archive for iOS
+      run: |
+        xcodebuild archive \
+        -scheme PriviumSDK \
+        -destination 'generic/platform=iOS' \
+        -archivePath ${{ github.workspace }}/build/PriviumSDK.xcarchive
+
+    - name: Export IPA
+      run: |
+        xcodebuild -exportArchive \
+        -archivePath ${{ github.workspace }}/build/PriviumSDK.xcarchive \
+        -exportOptionsPlist ExportOptions.plist \
+        -exportPath ${{ github.workspace }}/build
+
+    - name: Deploy to WIP Environment
+      run: |
+        echo "Deploying to WIP environment"
+        # Add your WIP deployment steps here
