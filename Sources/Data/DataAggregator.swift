@@ -1,4 +1,3 @@
-// Sources/Data/DataAggregator.swift
 import Foundation
 
 public struct DataPoint {

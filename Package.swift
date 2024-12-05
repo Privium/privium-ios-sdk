@@ -4,20 +4,19 @@ import PackageDescription
 let package = Package(
     name: "PriviumSDK",
     platforms: [
-        .iOS(.v13)  // Specify the minimum supported iOS version
+        .iOS(.v13),  // Minimum supported iOS version
+        .macOS(.v10_15)  // Minimum supported macOS version for APIs like SymmetricKey and AES
     ],
     products: [
         .library(
             name: "PriviumSDK",
             targets: ["PriviumSDK"]),
     ],
-    dependencies: [
-        // No third-party dependencies are needed since you're using only Apple frameworks
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "PriviumSDK",
-            dependencies: [],  // No dependencies here either
+            dependencies: [],
             path: "Sources"),
         .testTarget(
             name: "PriviumSDKTests",
