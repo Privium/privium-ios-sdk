@@ -1,11 +1,3 @@
-//
-//  EdgeComputing.swift
-//  PriviumSDK
-//
-//  Created by Ryan Napolitano on 8/22/24.
-//
-
-// Sources/Edge/EdgeComputing.swift
 import Foundation
 
 public class EdgeComputing {
@@ -15,4 +7,3 @@ public class EdgeComputing {
         return data.map { operation($0) }
     }
 }
-
